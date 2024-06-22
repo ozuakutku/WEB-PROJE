@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ASP.NET_Core_Proje_1.Models.departmanlar>
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="container">
+    <h2>Departman Listesi</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Departman Adı</th>
+                <th>Detay</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.DepartmanAd</td>
+                    <td>@item.Detay</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

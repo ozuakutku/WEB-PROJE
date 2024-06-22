@@ -1,0 +1,82 @@
+/* site.css */
+
+/* Side navigation styles */
+#sidebar-wrapper {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    background: #343a40;
+    transition: all 0.3s;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+    #sidebar-wrapper .sidebar-header {
+        padding: 20px;
+        background: #6c757d;
+        text-align: center;
+    }
+
+    #sidebar-wrapper .sidebar-nav {
+        padding: 0;
+        list-style: none;
+        margin-top: 20px;
+    }
+
+        #sidebar-wrapper .sidebar-nav li {
+            text-indent: 20px;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+
+            #sidebar-wrapper .sidebar-nav li a {
+                display: block;
+                text-decoration: none;
+                color: #ddd;
+                padding: 10px 20px;
+                border-radius: 4px;
+                transition: background 0.3s, color 0.3s;
+            }
+
+                #sidebar-wrapper .sidebar-nav li a:hover {
+                    background: #495057;
+                    color: #fff;
+                }
+
+#page-content-wrapper {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    left: 0;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    margin-left: 250px;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    background-color: #6c757d;
+    border: none;
+    color: white;
+}
+
+    .toggle-button i {
+        font-size: 20px;
+    }
+
+.d-none {
+    display: none;
+}

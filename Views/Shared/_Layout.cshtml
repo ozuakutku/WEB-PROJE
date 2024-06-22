@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - ASP.NET Core Proje</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="wrapper" class="toggled">
+        <div id="sidebar-wrapper">
+            <div class="sidebar-header">
+                <i class="fas fa-home fa-2x" style="color:white;"></i>
+            </div>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="/Depart/PageDepartman"><i class="fas fa-user-cog"></i> Departman İşlemleri</a>
+                </li>
+                <li>
+                    <a href="/Depart/PageDepartman"><i class="fas fa-user-tie"></i> Personel İşlemleri</a>
+                </li>
+                <li>
+                    <a href="/Depart/PageDepartman"><i class="fas fa-info-circle"></i> Hakkımızda</a>
+                </li>
+            </ul>
+        </div>
+        <div id="page-content-wrapper">
+            
+            <div class="container-fluid">
+                <h1>Welcome Admin!</h1>
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
